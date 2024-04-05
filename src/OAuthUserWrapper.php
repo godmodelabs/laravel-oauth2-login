@@ -50,6 +50,11 @@ class OAuthUserWrapper implements Authenticatable
         throw new \BadMethodCallException('Not available for OAuth users');
     }
 
+	public function getAuthPasswordName()
+	{
+		throw new \BadMethodCallException('Not available for OAuth users');
+	}
+
     public function getRememberToken()
     {
         throw new \BadMethodCallException('Not available for OAuth users');
